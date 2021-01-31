@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New employee</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="new-employee">
+    <button id="new-employee" class="btn" type="button" name="button">New employee</button>
+  </div>
+  <div class="hidden upper-section">
+    <button class="close-form" type="button" name="button">X</button>
+    <h2>Fill the form</h2>
+    <form class="form" method="post">
+      <label class="label" for="name">Your name:</label>
+      <input class="form-inside top-input w-100" type="text" name="name" placeholder="Name">
+      <br>
+
+      <label class="label" for="employeeId">Employee ID:</label>
+      <input class="form-inside middle-input w-100" type="text" name="employeeId" placeholder="Employee Id">
+      <br>
+
+      <label class="label" for="department" id="set">Department:</label>
+      <select class="form-inside middle-input w-100" id="select-1" name="department">
+        <option value="0">--choose Department--</option>
+        <option value="1">Computer Science</option>
+        <option value="2">Electrical</option>
+        <option value="3">Mechanical</option>
+        <option value="4">Civil</option>
+        <option value="5">Chemical</option>
+      </select>
+      <br>
+
+      <label class="label" for="email">Email:</label>
+      <input class="form-inside middle-input w-100" type="text" name="email" placeholder="Email Id">
+      <br>
+
+      <label class="label" for="dateOfJoining">Date of Joining:</label>
+      <input class="form-inside bottom-input w-100" type="date" name="dateOfJoining" placeholder="Date Of Joining">
+      <br>
+
+      <button class="btn w-50 btn-left" type="submit" name="submit">Submit</button>
+      <button class="btn w-50 btn-right" id="btn-right" type="submit" name="Clear">clear</button>
+    </form>
+
+  </div>
+
+  <div class="hidden table">
+    <h2>Employee Data</h2>
+    <table id="table-1">
+      <thead>
+        <tr>
+          <th>Remove data</th>
+          <th>Name</th>
+          <th>Employee ID</th>
+          <th>Department</th>
+          <th>Email</th>
+          <th>Date of Joining</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
